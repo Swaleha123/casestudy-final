@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+<title>Bootstrap Sign up Form with Icons</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="mockquiz-form">
+
+ <div [hidden]="submitted" style="width: 400px;">
+
+ <form [formGroup]="mockquizsaveform" #saveMockquiz1 (ngSubmit)="saveMockquiz(saveMockquiz1)">
+
+ <h2>Quiz</h2>
+
+    <hr>
+
+    <div class="form-group">
+
+  <div class="input-group">
+
+  <span class="input-group-addon"><i class="fa fa-user"></i></span>
+
+  <input type="text" class="form-control" formControlName="question" placeholder="Question" required="required">
+
+  <div class="alert alert-danger" *ngIf = "(Question.touched) && (Question.invalid)"
+
+        style="margin-top: 5px;">
+
+         <span *ngIf="Question.errors.required">Question is Required</span>
+
+        </div>
+
+  </div>
+
+ </div>
+
+ <div class="form-group">
+
+  <div class="input-group">
+
+  <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+
+  <input type="text" class="form-control" formControlName="answer" placeholder="Answer" required="required">
+
+  <div class="alert alert-danger" *ngIf = "(Answer.touched) && (Answer.invalid)"
+
+        style="margin-top: 5px;">
+
+         <span *ngIf="Answer.errors.required">Answer is Required</span>
+
+        </div>
+
+  </div>
+
+    </div>
+
+    <div class="form-group">
+
+  <div class="input-group">
+
+  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+
+  <input type="text" class="form-control" formControlName="op1" placeholder="op1" required="required">
+
+  <div class="alert alert-danger" *ngIf = "(Op1.touched) && (Op1.invalid)"
+
+        style="margin-top: 5px;">
+
+         <span *ngIf="Op1.errors.required">Option is Required</span>
+
+        </div>
+
+  </div>
+
+    </div>
+
+    <div class="form-group">
+
+  <div class="input-group">
+
+  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+
+  <input type="text" class="form-control" formControlName="op2" placeholder="op2" required="required">
+
+  <div class="alert alert-danger" *ngIf = "(Op2.touched) && (Op2.invalid)"
+
+        style="margin-top: 5px;">
+
+         <span *ngIf="Op2.errors.required">Option is Required</span>
+
+        </div>
+
+  </div>
+
+    </div>
+
+    <div class="form-group">
+
+  <div class="input-group">
+
+  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+
+  <input type="text" class="form-control" formControlName="op3" placeholder="op3" required="required">
+
+  <div class="alert alert-danger" *ngIf = "(Op3.touched) && (Op3.invalid)"
+
+        style="margin-top: 5px;">
+
+         <span *ngIf="Op3.errors.required">Option is Required</span>
+
+        </div>
+
+  </div>
+
+    </div>
+
+    <div class="form-group">
+
+  <div class="input-group">
+
+  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+
+  <input type="text" class="form-control" formControlName="op4" placeholder="op4" required="required">
+
+  <div class="alert alert-danger" *ngIf = "(Op4.touched) && (Op4.invalid)"
+
+        style="margin-top: 5px;">
+
+         <span *ngIf="Op4.errors.required">Option is Required</span>
+
+        </div>
+
+  </div>
+
+    </div>
+
+    <div class="form-group">
+
+  <div class="input-group">
+
+  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+
+  <input type="text" class="form-control" formControlName="op5" placeholder="op5" required="required">
+
+  <div class="alert alert-danger" *ngIf = "(Op5.touched) && (Op5.invalid)"
+
+        style="margin-top: 5px;">
+
+         <span *ngIf="Op5.errors.required">Option is Required</span>
+
+        </div>
+
+  </div>
+
+    </div>
+
+    <div class="form-group">
+
+  <div class="input-group">
+
+  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+
+  <input type="text" class="form-control" formControlName="op6" placeholder="op6" required="required">
+
+  <div class="alert alert-danger" *ngIf = "(Op6.touched) && (Op6.invalid)"
+
+        style="margin-top: 5px;">
+
+         <span *ngIf="Op6.errors.required">Option is Required</span>
+
+        </div>
+
+  </div>
+
+    </div>
+
+    <div class="form-group">
+
+  <div class="input-group">
+
+  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+
+  <input type="text" class="form-control" formControlName="op7" placeholder="op7" required="required">
+
+  <div class="alert alert-danger" *ngIf = "(Op7.touched) && (Op7.invalid)"
+
+        style="margin-top: 5px;">
+
+         <span *ngIf="Op7.errors.required">Option is Required</span>
+
+        </div>
+
+  </div>
+
+    </div>
+
+    <div class="form-group">
+
+  <div class="input-group">
+
+  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+
+  <input type="text" class="form-control" formControlName="difficulty" placeholder="difficulty" required="required">
+
+  <div class="alert alert-danger" *ngIf = "(Difficulty.touched) && (Difficulty.invalid)"
+
+        style="margin-top: 5px;">
+
+         <span *ngIf="Difficulty.errors.required">Difficulty is Required</span>
+
+        </div>
+
+  </div>
+
+    </div>
+
+ <div class="form-group">
+
+  <button type="ngsubmit" class="btn btn-primary btn-lg" [disabled]=!mockquizsaveform.valid >Save</button>
+
+
+
+ </div>
+
+
+
+  </form>
+
+</div>
+
+</div>
+
+<div [hidden]="!submitted">
+
+ <h4>Question Added SuccessFully!</h4>
+
+ <button (click)="saveMockquizForm()"></button>
+
+ </div>
+
+</body>
+
+</html>

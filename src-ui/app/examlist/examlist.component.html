@@ -1,0 +1,34 @@
+<div class="bg">
+    <div class="panel panel-default">
+    
+        <div class="panel-body">
+      
+          <table class="table table-hover table-sm" >
+      
+            <thead class="thead-light">
+                <br>
+      <h3>Previous Test Results</h3>
+      <br>
+              <tr>
+                <th>TestId</th>
+                <th>UserName</th>
+                <th>Result</th>
+              </tr>
+      
+            </thead>
+      
+            <tbody>
+      
+               <tr *ngFor="let exam of examList ">
+                <td>{{exam.testid}}</td>
+      
+                <td>{{exam.username}}</td>
+               
+                <td>{{exam.result}}</td>
+               
+              </tr>   
+        </tbody>  
+    </table>  
+    </div>  
+    </div> 
+    </div> 

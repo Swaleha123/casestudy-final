@@ -1,0 +1,43 @@
+<div class="container">
+
+  <h3 style="text-align:center">
+    Welcome to Quiz Application &#x263A;
+  </h3>
+  <div class="card" [hidden]="isQuestionCardShow">
+    <div class="card-body">
+      <h5 class="card-title" style="text-align:center">Choose Option &#x263A; </h5>
+      <form #questionTest="ngForm" novalidate>
+        <div *ngFor="let ques of allQuestions">
+          <script>
+        
+        </script>
+          <div>{{ques.question}}</div>
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label">Choose Correct Option</label>
+            <div class="col-md-9 col-form-label"  >
+             
+              <div *ngFor="let opt of ques.options" >
+               
+              <div class="form-check form-check-inline mr-1">
+                <input class="form-check-input" type="radio" name="{{ques.qid}}" (change)="onSelectionChange(ques.qid,opt)" >
+                <label class="form-check-label"> {{opt}} </label>
+              </div>
+        </div>
+          </div>
+        </div>  
+ 
+</div>
+
+        <button type="submit" class='btn btn-success' (click)="onSubmit()">Submit</button>
+        <!-- -->
+        
+          </form>
+    </div>
+  </div>
+ 
+  <div *ngFor="let s of selectedEntry" >
+   {{s}}
+    </div>
+   
+</div>
+                    
